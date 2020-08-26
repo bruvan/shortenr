@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <form method="post" action="/add">
+        <input required type="url" name="long" placeholder="Enter URL" value="{{long}}" >
+        <input required type="text" name="short" placeholder="Enter Backlink" minlength="3" maxlength="5" value="{{short}}">
+        <input type="submit">
+    </form>
+{% if result!="" %}
+<p>
+    {{result}}
+</p>
+{% endif %}
+</body>
+</html>
